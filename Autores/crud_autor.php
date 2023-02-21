@@ -1,10 +1,10 @@
 <?php
-    require_once('conexion.php');
+    require_once('/Applications/XAMPP/xamppfiles/htdocs/crud-basico/conexion.php');
     class CrudAutor{
         public function __construct(){}
         public function insertar($autor){
             $db=Db::conectar();
-            $insert=$db->prepare('INSERT INTO autores values(NULL,:nombre)');
+            $insert=$db->prepare('INSERT INTO autores values(NULL,:nombre,:direccion,:rh,:correo,:telefono,:pais,:ciudad)');
             $insert->bindValue('nombre',$autor->getNombre());
             $insert->bindValue('direccion',$autor->getDireccion());
             $insert->bindValue('rh',$autor->getRh());
@@ -38,7 +38,7 @@
             $eliminar->bindValue('id',$id);
             $eliminar->execute();
         }
-        public function obtenerLibro($id){
+        public function obtenerAutor($id){
             $db=Db::conectar();
             $select=$db->prepare('SELECT * FROM autores WHERE ID=:id');
             $select->bindValue('id',$id);
@@ -57,7 +57,7 @@
         }
         public function actualizar($autor){
             $db=DB::conectar();
-            $actualizar=$db->prepare('UPDATE autores SET nombre=:nombre WHERE ID=:id');
+            $actualizar=$db->prepare('UPDATE autores SET nombre=:nombre,direccion=:direccion,rh=:rh,correo=:correo,telefono=:telefono,pais=:pais,ciudad=:ciudad WHERE ID=:id');
             $actualizar->bindValue('id',$autor->getId());
             $actualizar->bindValue('nombre',$autor->getNombre());
             $actualizar->bindValue('direccion',$autor->getDireccion());
