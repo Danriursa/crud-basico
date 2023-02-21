@@ -1,7 +1,6 @@
-<html>
-    <head>
-        <title>Ingresar Libro</title>
-    </head>
+<?php
+    include('/Applications/XAMPP/xamppfiles/htdocs/crud-basico/cabeza.php')
+?>
     <header>
         Ingresar los datos del Libro
     </header>

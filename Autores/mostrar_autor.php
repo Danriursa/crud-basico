@@ -4,6 +4,7 @@
     $crud=new CrudAutor();
     $autor=new Autor();
     $listaAutores=$crud->mostrar();
+    include('/Applications/XAMPP/xamppfiles/htdocs/crud-basico/cabeza.php')
 ?>
 <html>
     <head>

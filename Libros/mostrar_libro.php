@@ -4,12 +4,8 @@
     $crud=new CrudLibro();
     $libro=new Libro();
     $listaLibros=$crud->mostrar();
+    include('/Applications/XAMPP/xamppfiles/htdocs/crud-basico/cabeza.php')
 ?>
-<html>
-    <head>
-        <title>Mostrar Libros</title>
-    </head>
-    <body>
         <table border=1>
             <head>
                 <td>Nombre</td>
