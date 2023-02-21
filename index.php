@@ -9,12 +9,22 @@
         <table border=1>
             <tr>
                 <td>
-                    <a href="ingresar.php">Ingresar</a>
+                    <a href="/crud-basico/Libros/ingresar_libro.php">Ingresar Libro</a>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a href="mostrar.php">Ver</a>
+                    <a href="/crud-basico/Libros/mostrar_libro.php">Ver Libro</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="/crud-basico/Autores/ingresar_autor.php">Ingresar Autor</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="/crud-basico/Autores/mostrar_autor.php">Ver Autor</a>
                 </td>
             </tr>
         </table>

@@ -1,6 +1,6 @@
 <?php
-    require_once('crud_libro.php');
-    require_once('libro.php');
+    require_once('/Applications/XAMPP/xamppfiles/htdocs/crud-basico/Libros/crud_libro.php');
+    require_once('/Applications/XAMPP/xamppfiles/htdocs/crud-basico/Libros/libro.php');
     $crud= new CrudLibro();
     $libro= new Libro();
     $libro=$crud->obtenerLibro($_GET['id']);
@@ -10,7 +10,7 @@
         <title>Actualizar Libro</title>
     </head>
     <body>
-        <form action="administrar_libro.php" method="post">
+        <form action="/crud-basico/Libros/administrar_libro.php" method="post">
             <table>
                 <tr>
                     <input type="hidden" name="id" value="<?php echo $libro->getId()?>">
@@ -20,7 +20,7 @@
                 <input type="hidden" name="actualizar" value="actualizar">
             </table>
             <input type="submit" value="Guardar">
-            <a href="index.php">Volver</a>
+            <a href="/crud-basico/index.php">Volver</a>
         </form>
     </body>
 </html>

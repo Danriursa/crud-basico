@@ -1,17 +1,17 @@
 <?php
-    require_once('crud_libro.php');
-    require_once('libro.php');
+    require_once('crud_autores.php');
+    require_once('autor.php');
 
-    $crud= new CrudLibro();
-    $libro= new Libro();
+    $crud= new CrudAutor();
+    $autor= new Autor();
     if (isset($_POST['insertar'])) {
-        $libro->setNombre($_POST['nombre']);
-        $crud->insertar($libro);
+        $autor->setNombre($_POST['nombre']);
+        $crud->insertar($autor);
         header('Location: index.php');
     }elseif (isset($_POST['actualizar'])) {
-        $libro->setId($_POST['id']);
-        $libro->setNombre($_POST['nombre']);
-        $crud->actualizar($libro);
+        $autor->setId($_POST['id']);
+        $autor->setNombre($_POST['nombre']);
+        $crud->actualizar($autor);
         header('Location: index.php');
     }elseif ($_GET['accion']=='e') {
         $crud->eliminar($_GET['id']);

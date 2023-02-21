@@ -1,5 +1,5 @@
 <?php
-    require_once('conexion.php');
+    require_once('/Applications/XAMPP/xamppfiles/htdocs/crud-basico/conexion.php');
     class CrudLibro{
         public function __construct(){}
         public function insertar($libro){
