@@ -1,6 +1,8 @@
 </main>
-        <footer>
-            Administrar Libro 2023
-        </footer>
+        <div class="position-absolute bottom-0 end-0">
+            <div class="badge bg-primary text-wrap" style="width: 6rem;">
+            Daniel Urbina 2023
+        </div>
+        </div>
     </body>
 </html>
