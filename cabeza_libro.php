@@ -5,7 +5,6 @@
     </head>
     <body>
             <header>
-                Bienvenido Administrar Libro
                 <div class="btn-toolbar justify-content-between">
                     <table>
                     <tr>

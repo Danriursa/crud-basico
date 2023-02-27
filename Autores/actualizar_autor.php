@@ -65,5 +65,5 @@
         </div>
 
         <?php
-    include('/Applications/XAMPP/xamppfiles/htdocs/crud-basico/cola_autor.php')
+    include('/Applications/XAMPP/xamppfiles/htdocs/crud-basico/cola.php')
     ?>

@@ -11,8 +11,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    
-                    Tabla libros
+                    Tabla Autores
                 </div>
                 <div class="card-body">
                     <table class="table text-center">
@@ -56,5 +55,5 @@
 
     </body>
     <?php
-    include('/Applications/XAMPP/xamppfiles/htdocs/crud-basico/cola_autor.php')
+    include('/Applications/XAMPP/xamppfiles/htdocs/crud-basico/cola.php')
     ?>
