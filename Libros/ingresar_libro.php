@@ -1,5 +1,5 @@
 <?php
-    include('/Applications/XAMPP/xamppfiles/htdocs/crud-basico/cabeza.php')
+    include('/Applications/XAMPP/xamppfiles/htdocs/crud-basico/cabeza_libro.php')
 ?>
     <header>
         Ingresar los datos del Libro
@@ -15,4 +15,6 @@
         <input type="submit" value="Guardar">
         <a href="/crud-basico/index.php">Volver</a>
     </form>
-</html>
+    <?php
+    include('/Applications/XAMPP/xamppfiles/htdocs/crud-basico/cola_libro.php')
+    ?>

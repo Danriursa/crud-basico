@@ -13,7 +13,7 @@
         $autor->setPais($_POST['pais']);
         $autor->setCiudad($_POST['ciudad']);
         $crud->insertar($autor);
-        header('Location: /crud-basico/index.php');
+        header('Location: /crud-basico/Autores/mostrar_autor.php');
     }elseif (isset($_POST['actualizar'])) {
         $autor->setId($_POST['id']);
         $autor->setNombre($_POST['nombre']);
@@ -24,10 +24,10 @@
         $autor->setPais($_POST['pais']);
         $autor->setCiudad($_POST['ciudad']);
         $crud->actualizar($autor);
-        header('Location: /crud-basico/index.php');
+        header('Location: /crud-basico/Autores/mostrar_autor.php');
     }elseif ($_GET['accion']=='e') {
         $crud->eliminar($_GET['id']);
-        header('Location: /crud-basico/index.php');
+        header('Location: /crud-basico/Autores/mostrar_autor.php');
     }elseif ($_GET['accion']=='a') {
         header('Location: /crud-basico/Autores/actualizar_autor.php');
     }
