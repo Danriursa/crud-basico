@@ -54,7 +54,7 @@
                                     <label for="" class="form-label">Ciudad</label>
                                         <input type="text"class="form-control" name="ciudad" value="<?php echo $autor->getCiudad()?>">
                                 </div>
-                                <input type="hidden" name="insertar" value="insertar">
+                                <input type="hidden" name="actualizar" value="actualizar">
                                 <input type="submit" value="Guardar" class="btn btn-success">
                                 <a href="/crud-basico/Autores/mostrar_autor.php" type="button" class="btn btn-danger">Cancelar</a>
                             </form>
